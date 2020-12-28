@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+<title>EAGLE COIN -ログイン画面</title>
+</head>
+<body>
+<header th:insert="fragments/page_header::pageHeader"></header>
+<div class="loginWrapper">
+<h1>Eagle Coin にログイン</h1>
+<form method="post" action="/eaglecoin/auth/login" class="loginForm">
+
+<label for="email">メールアドレス</label>
+    <input id="email" type="email" name="email" placeholder="メールアドレス">
+    
+    <label for="password">パスワード</label>
+    <input id="password" type="password" name="password"  placeholder="パスワード">
+    
+    <button name="button" type="submit" class="submitBtn">ログイン</button>
+</form>
+</div>
+</body>
+</html>

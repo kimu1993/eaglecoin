@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+<title>EAGLECOIN</title>
+</head>
+<body>
+<th:block th:fragment="pageHeader">
+<header><!-- ヘッダー -->
+	<div class="header_inner">
+		<div class="header_contents flex_contain">
+		<!-- ロゴ画像 -->
+		<div class="header_logo"><a href="/eaglecoin/"><img src="/img/logo.png" th:href="@{/img/logo.png} " /></a></div>
+		<div class="header_nav">
+		<button id=newRegister>新規登録</button>
+		<a href="/eaglecoin/login"><button id="login" th:class="${loginSession == null || loginSession.getUserName() == null ? '' : 'hidden'}">ログイン</button></a>
+		<button id="logout" th:class="${loginSession == null || loginSession.getUserName() == null ? 'hidden' : ''}">ログアウト</button>
+		<span class="separator"></span>
+		
+		<div class="mypageButton">マイページ</div>
+		</div>
+		</div>
+</div>
+</header>
+</th:block>
+</body>
+</html>

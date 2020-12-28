@@ -1,0 +1,184 @@
+@charset "UTF-8";
+
+body{
+width:100%;
+    background-color: #eef1f6;
+}
+
+header{ /*ヘッダー*/
+	background-color:#fff;
+	position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 70px;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 8px 28px 0 rgba(72,89,102,0.1);
+}
+.header_inner{ 
+    padding: 8px 0 10px;
+    color: #1f263e;
+    position: relative;
+    box-sizing: border-box;
+    background-color: #FFF;
+	
+}
+.header_contents{
+	max-width: 1120px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content:space-between; /*flexで左右寄せ対応*/
+}
+.header_contents div{
+align-self:center;
+}
+.flex_contain{ /*flex追加クラス*/
+display:flex;
+	
+}
+.header_logo img{
+	height:50px;
+	
+}
+.header_nav button{ /*ログイン・ログアウト・新規登録ボタン*/
+	line-height: 34px;
+    height: 34px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+    border:0;
+    margin:auto 10px;
+    background-color: #98cef1;
+    box-sizing:border-box;
+    color: #FFF;
+}
+.header_nav button:hover,.loginForm .submitBtn:hover{/*マウスホバー時に半透明・ポインターを矢印に*/
+	opacity:0.7;
+	cursor:pointer;
+	}
+.hidden{ /*非表示コンテンツ*/
+	display:none;
+}
+ .header_nav .separator {
+    height: 24px;
+    width: 1px;
+    background-color: rgba(31,38,62,0.4);
+    display: inline-block;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+.mypageButton{
+	    color: inherit;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 3;
+    font-weight: normal;
+    margin: 5px 0;
+    display: inline-block;
+    padding: 0 10px;
+    border-radius: 3px;
+    position: relative;
+}
+.wrapper{
+	max-width:1120px;
+	margin:100px auto;
+}
+/*サイドカラム*/
+.sideColumn{
+	width:240px;
+	height:500px;
+	background-color:#fff;
+	margin-right:30px;
+	padding:20px;
+	box-sizing:border-box;
+	border-radius: 3px;
+}
+#guestName{
+	color:#222;
+	font-size:12px;
+}
+.loginLink{
+	color:#4a8bb5;
+	font-weight:bold;
+	text-decoration:none;
+	border:none;
+	padding:2px;
+}
+
+.loginLink:hover{
+	border-bottom:1px solid #9f9f9f;
+
+	}
+.sideColumn h1{
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+.sideColumn p{
+	margin: 1em 0;
+    color: #666;
+    font-size: 11px;
+    line-height: 1.4;
+
+}
+/*メインカラム*/
+.mainColumn{
+	width:calc(100% - 240px);
+	background-color:#fff;
+	height:500px;
+	padding:20px;
+	box-sizing:border-box;
+	border-radius: 3px;
+}
+p{
+	font-size:12px;
+	margin:0;
+	padding:0;
+}
+/*ログイン画面*/
+.loginWrapper{
+	border-radius: 3px;
+    width: 420px;
+    margin: 100px auto;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 40px;
+}
+.loginWrapper h1{
+text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: bold;	
+    margin:0 0 20px 0;
+    padding:0;
+}
+.loginForm label{
+    margin: 5px 0;
+    display: inline-block;
+    font-size: 12px;
+}
+.loginForm input {
+    border: 1px solid #CCC;
+    border-radius: 3px;
+    display: block;
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 10px;
+    padding: 12px;
+    width: 100%;
+    box-sizing: border-box;
+    border-left:2px solid #98cef1;
+}
+.loginForm .submitBtn{
+	line-height: 34px;
+    height: 34px;
+    border-radius: 5px;
+    padding: 0 10px;
+    text-align: center;
+    border: 0;
+    margin: 10px auto;
+    background-color: #98cef1;
+    box-sizing: border-box;
+    color: #FFF;
+	
+}

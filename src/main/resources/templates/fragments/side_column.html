@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<link href="/css/style.css" th:href="@{/css/style.css}" rel="stylesheet" />
+<title>EAGLECOIN</title>
+</head>
+<body>
+<th:block th:fragment="sideColumn">
+<div class="sideColumn">
+<h1>EAGLE COIN へようこそ！</h1>
+<div id="guestName" th:class="${loginSession == null || loginSession.getUserName() == null ? '' : 'hidden'}">ゲストさん</div>
+<p>仮想暗号通貨取引サービスをご利用するには<a href="/eaglecoin/login" class="loginLink">ログイン</a>が必要です。</p>
+
+</div>
+</th:block>
+<header>
+</header>
+</body>
+</html>
